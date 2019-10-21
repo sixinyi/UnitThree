@@ -3,30 +3,37 @@ import java.util.Scanner;
 
 public class NumericComparisons {
 
-// for Private
-    private static boolean isZero(int a){
-        return a==0;
+    // for Private
+    private static boolean isZero(int a) {
+        return a == 0;
     }
-    private static boolean isPositive(int a){
-        return a>0;
+
+    private static boolean isPositive(int a) {
+        return a > 0;
     }
-    private static boolean isNegative(int a){
-        return a<0;
+
+    private static boolean isNegative(int a) {
+        return a < 0;
     }
-    private static boolean isNonNegative(int a){
-        return a>=0;
+
+    private static boolean isNonNegative(int a) {
+        return a >= 0;
     }
-    private static boolean isNonPositive(int a){
-        return a<=0;
+
+    private static boolean isNonPositive(int a) {
+        return a <= 0;
     }
-    private static boolean isOdd(int a){
-        return a/2!=0;
+
+    private static boolean isOdd(int a) {
+        return a / 2 != 0;
     }
-    private static boolean isMultiple(int a,int b){
-        return a/b==0;
+
+    private static boolean isMultiple(int a, int b) {
+        return a / b == 0;
     }
-    private static boolean isFactor(int a,int b){
-        return b/a==0;
+
+    private static boolean isFactor(int a, int b) {
+        return b / a == 0;
     }
 
     // for print out
@@ -42,6 +49,7 @@ public class NumericComparisons {
         System.out.println(num1 + " is non negative: " + isNonNegative(num1));
         System.out.println(num1 + " is zero: " + isZero(num1));
         System.out.println(num1 + " is non positive: " + isNonPositive(num1));
-        System.out.println(num1 + " is a multiple for num2: " + isMultiple(num1,num2));
-        System.out.println(num1 + " is a factor for num2: " + isFactor(num1,num2));
+        System.out.println(num1 + " is a multiple for num2: " + isMultiple(num1, num2));
+        System.out.println(num1 + " is a factor for num2: " + isFactor(num1, num2));
+    }
 }
