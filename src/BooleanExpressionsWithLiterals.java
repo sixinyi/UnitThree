@@ -6,7 +6,7 @@ public class BooleanExpressionsWithLiterals {
         System.out.println(-13 == -13.0);
         System.out.println(-13 <= -13.0);
         System.out.println(15 % 5 == 0);
-        System.out.println(7 + 9 / 2 >= 7 + 9 % 2);
+        System.out.println(7 + 9 % 2 >= 7 + 9 % 2);
 
         System.out.println(" ");
 
