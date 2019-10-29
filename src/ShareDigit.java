@@ -13,19 +13,26 @@ public class ShareDigit {
     }
 
     private static boolean ShareDigits(int a, int b) {
-        int a10 = a / 10;
+
         int a1 = a % 10;
-        int b10 = b / 10;
+        int a10 = a / 10;
+
         int b1 = b % 10;
+        int b10 = b / 10;
+
         if (a10 == b10) {
             return true;
-        } else if (a10 == b1) {
+        }
+        else if (a10 == b1) {
             return true;
-        } else if (a1 == b10) {
+        }
+        else if (a1 == b10) {
             return true;
-        } else if (a1 == b1) {
+        }
+        else if (a1 == b1) {
             return true;
-        } else {
+        }
+        else {
             return false;
         }
     }
