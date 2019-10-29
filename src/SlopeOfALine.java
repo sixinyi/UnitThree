@@ -1,6 +1,9 @@
+// 10/28 Bruce a program that will allow the user to enter four int values, x1, y1, x2, and y2, that represent two points on a line.
+
 import java.util.Scanner;
 
 public class SlopeOfALine {
+
     public static void main(String[] args){
         Scanner input=new Scanner(System.in);
         System.out.print("Enter x1: ");
@@ -12,9 +15,19 @@ public class SlopeOfALine {
         System.out.print("Enter y2: ");
         int yb=input.nextInt();
 
-        if(xa==xb) System.out.println("The line defined by the points ("+xa+", "+ya+") and ("+xb+", "+yb+") is a vertical line and the slope is undefined.");
-        else System.out.println("The line defined by the points ("+xa+", "+ya+") and ("+xb+", "+yb+") has a slope of "+(double)(yb-ya)/(xb-xa));
+        System.out.println(slope(xa, ya, xb, yb));
 
     }
 
+    private static String slope(int x1, int y1, int x2, int y2){
+
+        if (x1 == x2) {
+            return "The line defined by the points ("+x1+", "+y1+") and ("+x2+", "+y2+") is " + "a vertical line and the slope is undefined.";
+        }
+
+        else {
+            double slope = (double)(y2-y1)/(x2-x1);
+            return "The line defined by the points ("+x1+", "+y1+") and ("+x2+", "+y2+") is " + "has a slope of "+slope;
+        }
+    }
 }
