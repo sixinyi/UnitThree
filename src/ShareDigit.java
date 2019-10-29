@@ -1,3 +1,4 @@
+// 10/28 Bruce to tell if the two something are same.
 import java.util.Scanner;
 
 public class ShareDigit {
