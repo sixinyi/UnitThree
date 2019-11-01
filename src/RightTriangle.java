@@ -1,4 +1,5 @@
 // Bruce 11/1 this can tall three sides if is right or not right.
+
 import java.util.Scanner;
 
 public class RightTriangle {
