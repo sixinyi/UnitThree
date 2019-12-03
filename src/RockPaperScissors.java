@@ -1,4 +1,5 @@
 // 11.6 Bruce this is about to play RockPaperScissors with pc
+// 12/3 fix the space of =
 
 import java.util.Scanner;
 
@@ -31,30 +32,30 @@ public class RockPaperScissors {
 
     public static String whoWins(String computer, String person) {
         String winner;
-        String tied= "You tied!";
-        String computerWin= "The computer wins!";
+        String tied = "You tied!";
+        String computerWin = "The computer wins!";
         String personWin= "You win!";
-        String error= "You have entered invalid choice.";
+        String error = "You have entered invalid choice.";
         if(person. equals("scissors") && computer.equals("scissors"))
-            winner=tied;
+            winner = tied;
         else if(person. equals("rock") && computer. equals("rock"))
-            winner=tied;
+            winner = tied;
         else if(person. equals("paper") && computer. equals("paper"))
-            winner=tied;
+            winner = tied;
         else if(person. equals("scissors") && computer.equals("paper"))
-            winner=personWin;
+            winner = personWin;
         else if(person. equals("rock") && computer. equals("scissors"))
-            winner=personWin;
+            winner = personWin;
         else if(person. equals("paper") && computer. equals("rock"))
-            winner=personWin;
+            winner = personWin;
         else if(person. equals("scissors") && computer.equals("rock"))
-            winner=computerWin;
+            winner = computerWin;
         else if(person. equals("rock") && computer. equals("paper"))
-            winner=computerWin;
+            winner = computerWin;
         else if(person. equals("paper") && computer. equals("scissors"))
-            winner=computerWin;
+            winner = computerWin;
         else
-            winner=error;
+            winner = error;
         return winner;
 
     }

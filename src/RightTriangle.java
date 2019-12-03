@@ -1,4 +1,5 @@
 // Bruce 11/1 this can tall three sides if is right or not right.
+//fix at 12/3
 
 import java.util.Scanner;
 
@@ -23,11 +24,16 @@ public class RightTriangle {
 
     }
 
-    private static boolean isRight(int a, int b, int c){
-        return Math.pow(a, 2) + Math.pow(b, 2) == Math.pow(c, 2);
+    public static boolean isRight(int a, int b, int c){
+        if(Math.pow(a, 2) + Math.pow(b, 2) == Math.pow(c, 2)
+                || Math.pow(b, 2) + Math.pow(c, 2) == Math.pow(a, 2)
+                || Math.pow(a, 2) + Math.pow(c, 2) == Math.pow(b, 2))
+            return true;
+        else
+            return false;
     }
 
-    private static boolean isTriangle(int a, int b, int c){
+    public static boolean isTriangle(int a, int b, int c){
         return a + b > c && b + c > a && a + c > b;
     }
 

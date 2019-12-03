@@ -1,4 +1,5 @@
 // 10/19 Bruce this is about to check how the formulas work.
+// update
 public class BooleanExpressionsWithLiterals {
 
     public static void main(String[] args){
